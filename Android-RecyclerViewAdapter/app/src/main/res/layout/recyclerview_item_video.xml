@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="@color/colorPrimary"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:weightSum="100">
+
+    <ImageView
+        android:id="@+id/video_item_image"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="50"
+        android:background="@android:color/white"
+        android:scaleType="centerCrop"/>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="45"
+        android:paddingStart="10dp">
+
+        <TextView
+            android:id="@+id/video_item_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Title of video"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/video_item_author"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/video_item_title"
+            android:singleLine="true"
+            android:text="Author of Video"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="@color/colorGrey" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="5">
+
+        <ImageButton
+            android:id="@+id/video_item_dropdown_button"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_action_more_vert" />
+    </RelativeLayout>
+
+
+</LinearLayout>

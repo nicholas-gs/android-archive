@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/recyclerview_item_header_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="Liked videos"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/recyclerview_item_header_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/recyclerview_item_header_title"
+            android:layout_marginTop="2dp"
+            android:text="Name of user"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/recyclerview_item_header_shuffle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/recyclerview_item_header_username"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/ic_shuffle_grey_24dp" />
+
+        <ImageView
+            android:id="@+id/recyclerview_item_header_download"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/recyclerview_item_header_username"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="18dp"
+            android:layout_toEndOf="@id/recyclerview_item_header_shuffle"
+            android:src="@drawable/ic_file_download_grey_24dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:paddingStart="8dp">
+
+        <TextView
+            android:id="@+id/recyclerview_item_header_noofvideos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="10 Videos"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/recyclerview_item_header_lock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/recyclerview_item_header_noofvideos"
+            android:layout_marginLeft="12dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="2dp"
+            android:layout_toEndOf="@id/recyclerview_item_header_noofvideos"
+            android:src="@drawable/ic_lock_black_16dp" />
+
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/recyclerview_item_header_playfab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="25dp"
+        android:src="@drawable/ic_play_arrow_white_24dp"
+        app:fabSize="normal" />
+
+
+</RelativeLayout>

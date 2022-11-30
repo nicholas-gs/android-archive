@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">PinLockScreen</string>
+    <string name="password_actual">1234</string>
+</resources>
